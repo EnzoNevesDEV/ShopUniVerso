@@ -1,5 +1,5 @@
 body {
-    
+
     background-image: url(../img/zyro-image.png);
     background-size: cover;
     font-family: Montserrat;
@@ -63,7 +63,8 @@ body {
     background-size: 16px 80px;
 }
 
-.login-block input:active, .login-block input:focus {
+.login-block input:active,
+.login-block input:focus {
     border: 1px solid #4070f4;
 }
 
