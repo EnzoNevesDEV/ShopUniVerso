@@ -99,6 +99,9 @@ h1 {
 }
 
 .footer .social-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
     padding: 1rem;
     border-radius: 8px;
     margin-top: 1rem;
@@ -106,20 +109,23 @@ h1 {
 
 .footer .social-field a i {
     margin: 0 0.5rem;
-    width: 15px;
+    font-size: 26px;
 }
 
 .footer a {
     text-decoration: none;
     color: white;
+    align-content: center;
 
 }
 
 .footer .social-field.Facebook {
     background: linear-gradient(to right, #1877F2, #0e5abf);
+    margin-right: 10px;
 
 }
 
 .footer .social-field.Google {
     background: linear-gradient(to right, #DB4437, #d62d20);
+    margin-left: 10px;
 }
