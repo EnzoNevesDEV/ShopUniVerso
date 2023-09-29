@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/loginPage.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://kit.fontawesome.com/1ab94d0eba.js" crossorigin="anonymous"></script>
 
     <title>ShopUniVerso - O Universo das Compras Online</title>
@@ -17,9 +19,12 @@
         <div class="login">
             <h1>Ja tem Cadastro?</h1>
             <form>
-                <input type="text" name="usuario" placeholder="Email, CPF ou CNPJ">
-                <input type="password" name="senha" placeholder="Senha">
-                <input type="submit" value="Entrar">
+                <input type="text" name="usuario" placeholder="Email, CPF ou CNPJ" id="user">
+                <input type="password" name="senha" placeholder="Senha" id="password">
+                <button type="submit"  class="entrar-button" onclick="Logar()">
+                    Entrar
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
                 <div class="links">
                     <p>
                         <a href="#" class="forget-password">Esqueceu a senha?</a>
