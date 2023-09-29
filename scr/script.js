@@ -4,8 +4,9 @@ function Logar(){
     var senha = document.getElementById('password').value;
 
     if(username == "admin" && senha == "admin"){
+        alert('sucesso!')
         location.href = "./LoginPage.html";
     }else{
-        alert('Usuario ou senha incorretos');
+        alert('Email ou senha incorretos.');
     }
 }

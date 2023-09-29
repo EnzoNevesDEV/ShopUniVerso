@@ -18,10 +18,14 @@
     <section class="area-login">
         <div class="login">
             <h1>Ja tem Cadastro?</h1>
-            <form>
-                <input type="text" name="usuario" placeholder="Email, CPF ou CNPJ" id="user">
-                <input type="password" name="senha" placeholder="Senha" id="password">
-                <button type="submit"  class="entrar-button" onclick="Logar()">
+            <form onsubmit="Logar()">
+                <div>
+                    <input type="text" class="input-email" name="email" id="user" placeholder="Email" >
+                </div>
+                <div>
+                    <input type="password" class="input-senha" name="senha" id="password" placeholder="Senha">
+                </div>
+                <button type="submit" class="entrar-button">
                     Entrar
                     <i class="fa-solid fa-right-to-bracket"></i>
                 </button>
