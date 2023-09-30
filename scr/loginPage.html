@@ -18,7 +18,7 @@
     <section class="area-login">
         <div class="login">
             <h1>Ja tem Cadastro?</h1>
-            <form onsubmit="Logar()">
+            <form>
                 <div>
                     <input type="text" class="input-email" name="email" id="user" placeholder="Email">
                 </div>
@@ -29,7 +29,7 @@
                     <i class="fa-solid fa-triangle-exclamation" style="color: #e41313;"></i>
                     Email ou senha incorreta.
                 </span>
-                <button type="submit" class="entrar-button">
+                <button type="button" class="entrar-button" onclick="Logar();">
                     Entrar
                     <i class="fa-solid fa-right-to-bracket"></i>
                 </button>
