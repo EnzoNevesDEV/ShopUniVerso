@@ -45,11 +45,23 @@ body {
     font-size: 14px;
 }
 
+.span-required {
+    color: white;
+    display: flex;
+    margin-top: 13px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.span-required i {
+    margin-right: 5px;
+}
+
 .entrar-button {
     background: linear-gradient(to left, #9b59b6, #e74c3c);
     color: white;
     font-size: 15px;
-    margin-top: 14px;
+    margin-top: 12px;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
