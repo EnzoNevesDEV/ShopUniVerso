@@ -10,7 +10,7 @@
 <body>
     <section>
         <h2>Contato</h2>
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form id="contactForm" action="https://api.staticforms.xyz/submit" method="post">
             <label>Nome</label>
             <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
             <label>Email</label>
@@ -23,5 +23,11 @@
             <input type="hidden" name="redirectTo" value="/scr/obrigado.html">
         </form>
     </section>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+            window.location.href = "obrigado.html";
+        });
+    </script>
 </body>
 </html>
