@@ -48,13 +48,6 @@
     --transition-2: 0.5s ease;
     --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
     --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
-  
-    /**
-     * spacing
-     */
-  
-    --section-padding: 60px;
-  
   }
   
   
@@ -681,25 +674,6 @@
   .footer-brand .logo {
     margin-bottom: 15px;
   }
-  
-  .social-list {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-  
-  .social-link {
-    background: var(--gainsboro);
-    color: var(--onyx);
-    font-size: 20px;
-    padding: 10px;
-    transition: var(--transition-1);
-  }
-  
-  .social-link:is(:hover, :focus) {
-    background: var(--bittersweet);
-    color: var(--white);
-  }
    
   
   .footer-bottom {
@@ -1000,7 +974,8 @@
 
 .area-login {
     display: flex;
-    height: 60vh;
+    padding: 0.7%;
+    height: 70vh;
     justify-content: center;
     align-items: center;
 }
