@@ -1,21 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="icon" href="./img/Sem título (2).png" type="image/icon type">
-    <title>ShopUniVerso/title>
+    <title>ShopUniVerso</title>
+    <link rel="shortcut icon" href=".//img/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href=".//css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
 </head>
 
-<body>
-<div class="logo"></div>
-<div class="login-block">
-    <h1>FAZER LOGIN</h1>
-    <input type="text" value="" placeholder="Username" id="user" />
-    <input type="password" value="" placeholder="Password" id="password" />
-    <button type="Logar" onclick="Logar();">Logar</button>
-</div>
+<body id="top">
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+            </a>
+
+            <button class="nav-open-btn" data-nav-open-btn aria-label="Open Menu">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <nav class="navbar" data-navbar>
+
+                <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <a href="#" class="logo">
+                    <img src="./assets/images/logo.svg" width="190" height="50" alt="Footcap logo">
+                </a>
+
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">About</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Products</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Shop</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Blog</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="./Contato.html" class="navbar-link">Contact</a>
+                    </li>
+
+                </ul>
+
+                <ul class="nav-action-list">
+
+                    <li>
+                        <button class="nav-action-btn">
+                            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+
+                            <span class="nav-action-text">Search</span>
+                        </button>
+                    </li>
+
+                    <li>
+                        <a href="loginPage.html" class="nav-action-btn">
+                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                            <span class="nav-action-text">Login / Register</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <button class="nav-action-btn">
+                            <ion-icon name="heart-outline" aria-hidden="true"></ion-icon>
+
+                            <span class="nav-action-text">Wishlist</span>
+
+                            <data class="nav-action-badge" value="5" aria-hidden="true">5</data>
+                        </button>
+                    </li>
+
+                    <li>
+                        <button class="nav-action-btn">
+                            <ion-icon name="bag-outline" aria-hidden="true"></ion-icon>
+
+                            <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+                            <data class="nav-action-badge" value="4" aria-hidden="true">4</data>
+                        </button>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </div>
+        <section class="departamento">
+        </section>
+    </header>
+
+    <section class="area-login">
+        <div class="login">
+            <h1>Ja tem Cadastro?</h1>
+            <form>
+                <div>
+                    <input type="text" class="input-email" name="email" id="user" placeholder="Email">
+                </div>
+                <div>
+                    <input type="password" class="input-senha" name="senha" id="password" placeholder="Senha">
+                </div>
+                <span class="span-required">
+                    <i class="fa-solid fa-triangle-exclamation" style="color: #e41313;"></i>
+                    Email ou senha incorreta.
+                </span>
+                <button type="button" class="entrar-button" onclick="Logar();">
+                    Entrar
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+                <div class="links">
+                    <p>
+                        <a href="#" class="forget-password">Esqueceu a senha?</a>
+                    </p>
+                    <p>
+                        <a href="#" class="sign-up">Criar Conta</a>
+                    </p>
+                </div>
+            </form>
+            <hr>
+            <div>
+                <div class="footer">
+                    <span>Quero acessar com as minhas redes sociais</span>
+                    <div class="social-field">
+                        <div class="social-field Facebook">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                                Facebook
+                            </a>
+                        </div>
+                        <div class="social-field Google">
+                            <a href="#">
+                                <i class="devicon-google-plain"></i>
+                                Google
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-top section">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="160" height="50" alt="Footcap logo">
+              </a>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2023 <a href="#" class="copyright-link">ShopUniVerso</a>. All Rights Reserved
+            </p>
+    
+          </div>
+        </div>
+      </footer>
 </body>
 <script src="./script.js"></script>
