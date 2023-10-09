@@ -9,7 +9,7 @@
   --rich-black-fogra-29: hsl(217, 28%, 9%);
   --gray-x-11-gray: hsl(0, 0%, 74%);
   --oxford-blue_60: hsla(230, 41%, 14%, 0.6);
-  --bittersweet: hsl(5, 100%, 69%);
+  --bittersweet: purple;
   --smoky-black: rgb(7, 6, 1);
   --gainsboro: hsl(0, 0%, 88%);
   --black_90: hsla(0, 0%, 0%, 0.9);
@@ -192,11 +192,12 @@ body {
   padding: 14px 25px;
   border: 1px solid var(--border-color, var(--bittersweet));
 }
-
 .btn-primary:is(:hover, :focus) {
   --background: var(--salmon);
   --border-color: var(--salmon);
 }
+
+
 
 .btn-secondary {
   --background: transparent;
@@ -361,6 +362,7 @@ body {
 .product-card .card-title>a {
   color: inherit;
   transition: var(--transition-1);
+  font-size: medium;
 }
 
 .product-card .card-title>a:is(:hover, :focus) {
@@ -404,7 +406,7 @@ body {
 \*-----------------------------------*/
 
 .header {
-  background: rgb(0, 96, 177);
+  background: rgb(218, 218, 218);
   position: fixed;
   top: 0;
   left: 0;
@@ -482,6 +484,7 @@ body {
 
 .navbar .logo {
   background: var(--maximum-blue-green_10);
+
   padding-block: 50px 40px;
 }
 
@@ -574,7 +577,7 @@ body {
 \*-----------------------------------*/
 
 .departamento {
-  background-color: rgb(255, 101, 0);
+  background: linear-gradient(to right, #6a3093, #a044ff);
   text-align: center;
   padding: 3px 0;
   position: fixed; 
@@ -907,13 +910,14 @@ a.footer-link:is(:hover, :focus) {
 }
 
 .footer-bottom {
-  background: #0060b1;
+  background: linear-gradient(to right, #6a3093, #a044ff);
   padding-block: 20px;
 }
 
 .copyright {
   text-align: center;
   color: var(--white);
+  font-size: 1.1rem;
 }
 
 .copyright-link {
@@ -933,7 +937,7 @@ a.footer-link:is(:hover, :focus) {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background:rgb(0, 96, 177);
+  background: linear-gradient(to right, #6a3093, #a044ff);
   color: var(--white);
   font-size: 20px;
   padding: 10px;
