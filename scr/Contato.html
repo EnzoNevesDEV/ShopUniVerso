@@ -8,6 +8,18 @@
     <link rel="icon" href="./img/teste.ico" type="image/x-icon">
 </head>
 <body>
+    <header class="header" data-header>
+        <div class="container">
+
+            <div class="overlay" data-overlay></div>
+
+            <a href="#" class="logo">
+                <img src="./img/logoMarca.png" width="160" height="50" alt="Footcap logo">
+            </a>
+        </div>
+        <section class="departamento">
+        </section>
+    </header>
     <section>
         <h2>Contato</h2>
         <form id="contactForm">
@@ -23,11 +35,41 @@
             <input type="hidden" name="redirectTo" value="/scr/obrigado.html">
         </form>
     </section>
-    <script>
+    <footer class="footerUm">
+
+        <div class="footer-top section">
+            <div class="container">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="./img/logoMarca.png" width="160" height="50" alt="Footcap logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2023 <a href="#" class="copyright-link">ShopUniVerso</a>
+                    . Todos os direitos reservados. ShopUniVerso é o seu destino confiável para as últimas novidades em
+                    hardware.
+                    Oferecemos uma ampla gama de produtos, desde componentes de computador até dispositivos eletrônicos
+                    de última geração.
+                    Este site e seu conteúdo são protegidos por leis de direitos autorais e marcas registradas. Nenhuma
+                    parte deste site pode ser reproduzida,
+                    armazenada em um sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio,
+                    eletrônico, mecânico, fotocópia, gravação ou outro,
+                    sem permissão prévia por escrito da ShopUniVerso. Todas as marcas registradas são propriedade de
+                    seus respectivos proprietários
+                </p>
+
+            </div>
+        </div>
+    </footer>
+</body>
+ <script>
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault(); 
             window.location.href = "obrigado.html";
         });
     </script>
-</body>
 </html>

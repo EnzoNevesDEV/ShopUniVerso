@@ -1,54 +1,193 @@
-*{
+:root {
+    --ff-roboto: 'Roboto', sans-serif;
+    --ff-josefin-sans: 'Josefin Sans', sans-serif;
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
+}
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-
 }
-body{
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-family: var(--ff-josefin-sans);
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ebebeb;
+    font-size: 1.6rem;
+    padding-top: 90px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: hsl(0, 0%, 95%);
+}
+
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 80%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
+
+.header {
+    background: rgb(218, 218, 218);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: var(--transition-1);
+    z-index: 4;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: hsla(0, 0%, 0%, 0.6);
+    z-index: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition-1);
+}
+
+.departamento {
+    background: linear-gradient(to right, #6a3093, #a044ff);
+    text-align: center;
+    padding: 3px 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footerUm {
+    font-family: var(--ff-roboto);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-top {
+    display: flex;
+    background: hsl(200, 12%, 95%);
+}
+
+.footer-brand {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--gainsboro);
+}
+
+.footer-brand .logo {
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    display: flex;
+    background: linear-gradient(to right, #6a3093, #a044ff);
+    padding-top: 23px;
+}
+
+.copyright {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.1rem;
+}
+
+.copyright-link {
+    display: inline-block;
+    color: var(--bittersweet);
+}
+
+.container {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-brand .logo {
+    margin-bottom: 0;
+}
+
+.footer-brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #101026;
+    background: #ebebeb;
 }
-section{
+
+section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding: 10px 45px;
-    background: #1d1d2e;
+    background: rgb(86, 25, 177);
     width: 500px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
-section h2{
+
+section h2 {
     color: #f5f5f5;
     font-size: 2.5rem;
     margin: 2rem;
 }
-section form{
+
+section form {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-form label{
+
+form label {
     color: #f5f5f5;
     font-size: 17px;
     margin-bottom: 4px;
 }
-form input{
+
+form input {
     padding: 15px;
     outline: none;
     border: 0;
     margin-bottom: 20px;
     font-size: 15px;
-    transition: all 0.5;
+    transition: all 0.5s;
 }
-form input:focus{
+
+form input:focus {
     border-radius: 16px;
 }
-form textarea{
+
+form textarea {
     padding: 10px;
     outline: none;
     border: 0;
@@ -56,10 +195,12 @@ form textarea{
     margin-bottom: 30px;
     transition: all 0.5s;
 }
-form textarea:focus{
+
+form textarea:focus {
     border-radius: 16px;
 }
-form button{
+
+form button {
     padding: 15px;
     cursor: pointer;
     font-size: 16px;
@@ -68,37 +209,41 @@ form button{
     transition: all 1s;
     margin-bottom: 20px;
 }
-form button:hover{
+
+form button:hover {
     background: #f5f5f5;
     border-radius: 16px;
 }
 
-/*Pagina do obrigado*/
-.main{
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #101026;
+    background: #ebebeb;
     flex-direction: column;
 }
-.text{
+
+.text {
     font-size: 45px;
-    color: #f5f5f5;
+    color: #0e0e0e;
     margin-bottom: 30px;
 }
-.paragrafo{
-    color: #f5f5f5;
+
+.paragrafo {
+    color: #0e0e0e;
     margin-bottom: 50px;
 }
-.btn{
+
+.btn {
     padding: 15px 55px;
-    background: #f5f5f5;
+    background: #0e0e0e;
     text-decoration: none;
-    color: #101026;
+    color: #ffffff;
     font-size: 18px;
     transition: all 0.5s;
 }
-.btn:hover{
+
+.btn:hover {
     border-radius: 16px;
 }
