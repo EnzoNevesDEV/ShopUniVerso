@@ -112,13 +112,13 @@ body {
 
 .copyright {
     text-align: center;
-    color: var(--white);
+    color: white;
     font-size: 1.1rem;
 }
 
 .copyright-link {
     display: inline-block;
-    color: var(--bittersweet);
+    color: purple;
 }
 
 .container {
@@ -150,14 +150,11 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 10px 45px;
-    background: rgb(86, 25, 177);
-    width: 500px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 30%;
 }
 
 section h2 {
-    color: #f5f5f5;
+    color: black;
     font-size: 2.5rem;
     margin: 2rem;
 }
@@ -179,25 +176,20 @@ form input {
     outline: none;
     border: 0;
     margin-bottom: 20px;
+    border-radius: 20px;
     font-size: 15px;
     transition: all 0.5s;
 }
 
-form input:focus {
-    border-radius: 16px;
-}
 
 form textarea {
     padding: 10px;
     outline: none;
     border: 0;
     font-size: 15px;
+    border-radius: 20px;
     margin-bottom: 30px;
     transition: all 0.5s;
-}
-
-form textarea:focus {
-    border-radius: 16px;
 }
 
 form button {
@@ -205,6 +197,7 @@ form button {
     cursor: pointer;
     font-size: 16px;
     background: transparent;
+    border-radius: 20px;
     border: 2px solid #f5f5f5;
     transition: all 1s;
     margin-bottom: 20px;
