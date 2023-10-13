@@ -140,7 +140,7 @@ body {
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     min-height: 90vh;
     background: #ebebeb;
 }
@@ -155,7 +155,7 @@ section {
 
 section h2 {
     color: black;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 2rem;
 }
 
@@ -239,4 +239,30 @@ form button:hover {
 
 .btn:hover {
     border-radius: 16px;
+}
+
+
+
+.footer-link-box li{
+    list-style-type: none;
+    padding: 6px 10px 0px;
+    font-size: 20px;
+}
+
+.footer-list h1{
+    font-size: 40px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.social-midea{
+    display: flex;
+    margin: 10px;
+}
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0px 10px 0px;
 }

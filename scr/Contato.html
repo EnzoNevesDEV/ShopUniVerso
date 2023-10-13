@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="icon" href="./img/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <header class="header" data-header>
         <div class="container">
@@ -21,74 +23,52 @@
         <section class="departamento">
         </section>
     </header>
-    <ul class="social-list">
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-pinterest"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="social-link">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-    </div>
 
     <div class="footer-link-box">
+        <ul class="footer-list">
+            <li>
+                <h1 class="footer-list-title">Contate-Nos</h1>
+            </li>
+            <li>
+                <address class="footer-link">
+                    <!-- <ion-icon name="location"></ion-icon> -->
 
-      <ul class="footer-list">
+                    <span class="footer-link-text">
+                        Barra Shopping - Loja 526, Barra da Tijuca, Avenida das Américas - RJ
+                    </span>
+                </address>
+            </li>
+            <li>
+                <a href="tel:+552175742478" class="footer-link">
+                    <!-- <ion-icon name="call"></ion-icon> -->
 
-        <li>
-          <p class="footer-list-title">Contate-Nos</p>
-        </li>
-
-        <li>
-          <address class="footer-link">
-            <ion-icon name="location"></ion-icon>
-
-            <span class="footer-link-text">
-              Barra Shopping - Loja 526, Barra da Tijuca, Avenida das Américas - RJ
-            </span>
-          </address>
-        </li>
-
-        <li>
-          <a href="tel:+552175742478" class="footer-link">
-            <ion-icon name="call"></ion-icon>
-
-            <span class="footer-link-text">+55 21 7574-2478</span>
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:shopuniverso@gmail.com" class="footer-link">
-            <ion-icon name="mail"></ion-icon>
-
-            <span class="footer-link-text">shopuniverso@gmail.com</span>
-          </a>
-        </li>
-
-      </ul>
+                    <span class="footer-link-text">+55 21 7574-2478</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:shopuniverso@gmail.com" class="footer-link">
+                    <!-- <ion-icon name="mail"></ion-icon> -->
+                    <span class="footer-link-text">shopuniverso@gmail.com</span>
+                </a>
+            </li>
+            <li class="social-midea">
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+                <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+        </ul>
     </div>
     <section>
-        
+
         <h2>Contato</h2>
         <form id="contactForm">
             <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
@@ -99,7 +79,7 @@
             <input type="hidden" name="redirectTo" value="/scr/obrigado.html">
         </form>
     </section>
-    
+
 
     <footer class="footerUm">
 
@@ -132,12 +112,13 @@
         </div>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
- <script>
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault(); 
-            window.location.href = "obrigado.html";
-        });
-    </script>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        window.location.href = "obrigado.html";
+    });
+</script>
+
 </html>
