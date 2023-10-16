@@ -10,6 +10,8 @@
   <link rel="stylesheet" href=".//css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="./img/icon.ico" type="image/png+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link
     href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
     rel="stylesheet">
@@ -49,15 +51,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Home</a>
+            <a href="#" class="navbar-link">Pagina Inicial</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link">About</a>
+            <a href="./SobreNos.html" class="navbar-link">Sobre nós</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link">Products</a>
+            <a href="#" class="navbar-link">Produtos</a>
           </li>
 
           <li class="navbar-item">
@@ -69,7 +71,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="./Contato.html" class="navbar-link">Contact</a>
+            <a href="./Contato.html" class="navbar-link">Contato</a>
           </li>
 
         </ul>
@@ -116,11 +118,28 @@
     </div>
     <section class="departamento">
       <ul class="departamento-list">
+        <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
         <li class="departamento-item">
-          <a href="#" class="departamento-link">Smartphone</a>
+          <a href="#" class="departamento-link">Categorias</a>
+        </li>
+        
+        <li class="departamento-item">
+          <a href="#" class="departamento-link">Lançamentos</a>
+        </li>
+        <li class="departamento-item">
+          <a href="#" class="departamento-link">Ofertas do Dia</a>
+        </li>
+        <li class="departamento-item">
+          <a href="#" class="departamento-link">Hardware</a>
         </li>
         <li class="departamento-item">
           <a href="#" class="departamento-link">Computador</a>
+        </li>
+        <li class="departamento-item">
+          <a href="#" class="departamento-link">Periféricos</a>
+        </li>
+        <li class="departamento-item">
+          <a href="#" class="departamento-link">Celular & Smartphone</a>
         </li>
         <li class="departamento-item">
           <a href="#" class="departamento-link">Robótica</a>
@@ -130,9 +149,6 @@
         </li>
         <li class="departamento-item">
           <a href="#" class="departamento-link">TV</a>
-        </li>
-        <li class="departamento-item">
-          <a href="#" class="departamento-link">Lançamentos</a>
         </li>
       </ul>
     </section>
@@ -188,7 +204,19 @@
 
             <li>
               <div class="collection-card" style="background-image: url('./img-produto/projetores.png')">
-                <h3 class="h4 card-title">PROJETORES</h3>
+                <h3 class="h4 card-title">PERIFÉRICOS</h3>
+
+                <a href="#" class="btn btn-secondary">
+                  <span>VER PRODUTOS</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <div class="collection-card" style="background-image: url('./img-produto/hardware.png')">
+                <h3 class="h4 card-title">TVs</h3>
 
                 <a href="#" class="btn btn-secondary">
                   <span>VER PRODUTOS</span>
@@ -209,6 +237,7 @@
                 </a>
               </div>
             </li>
+            
 
           </ul>
 
@@ -765,6 +794,68 @@
 
               </div>
             </li>
+            <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="/scr/img-produto/mouse gamer.jpg" width="312" height="350" loading="lazy"
+                    alt="Nike Basketball shoes" class="image-contain">
+
+                  <ul class="card-action-list">
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-1">
+                        <ion-icon name="cart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-1">Adicionar ao Carrinho</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar aos Favoritos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Pré-Visualização</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-cat">
+                    <a href="#" class="card-cat-link">Men</a> /
+                    <a href="#" class="card-cat-link">Sports</a>
+                  </div>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Mouse Gamer Logitech G403 HERO com RGB LIGHTSYNC, 6 Botões Programáveis, Ajuste de Peso
+                      e Sensor HERO 25K - 910-005631</a>
+                  </h3>
+
+                  <data class="card-price" value="120.85">R$ 120.85</data>
+
+                </div>
+
+              </div>
+            </li>
 
           </ul>
 
@@ -809,7 +900,7 @@
 
             <li>
               <a href="#" class="social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
 
@@ -980,7 +1071,7 @@
           armazenada em um sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio, eletrônico,
           mecânico, fotocópia, gravação ou outro,
           sem permissão prévia por escrito da ShopUniVerso. Todas as marcas registradas são propriedade de seus
-          respectivos proprietários
+          respectivos proprietários.
         </p>
 
       </div>
