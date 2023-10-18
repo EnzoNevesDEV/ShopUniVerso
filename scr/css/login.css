@@ -142,13 +142,13 @@ body {
 
 .copyright {
   text-align: center;
-  color: var(--white);
+  color: white;
   font-size: 1.1rem;
 }
 
 .copyright-link {
   display: inline-block;
-  color: var(--bittersweet);
+  color: purple;
 }
 
   /**
