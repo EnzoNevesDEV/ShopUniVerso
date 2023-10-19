@@ -239,7 +239,7 @@ body {
 }
 
 .has-scrollbar::-webkit-scrollbar-button {
-  width: calc(25% - 40px);
+  width: calc(25% - 90px);
 }
 
 .card-banner {
