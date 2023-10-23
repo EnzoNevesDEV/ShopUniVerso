@@ -1,4 +1,18 @@
 :root {
+
+/*-----------------------------------*\
+ * #COLORS
+\*-----------------------------------*/
+
+    --soft-ice-white: hsl(0, 0%, 92%);
+    --pearly-white: hsl(0, 0%, 85%);
+    --pure-white: hsl(0, 0%, 100%);
+    --deep-purple: hsl(300, 100%, 25%);
+    --deep-charcoal: hsl(0, 0%, 27%);
+    --elegant-ivory: hsl(260, 12%, 95%);
+    --whispering-white: hsl(0, 0%, 88%);
+
+
     --ff-roboto: 'Roboto', sans-serif;
     --ff-josefin-sans: 'Josefin Sans', sans-serif;
     --transition-1: 0.25s ease;
@@ -26,7 +40,7 @@ html {
 }
 
 body {
-    background: #ebebeb;
+    background: var(--soft-ice-white);
     font-size: 1.6rem;
     padding-top: 90px;
 }
@@ -48,7 +62,7 @@ body {
 }
 
 .header {
-    background: rgb(218, 218, 218);
+    background: var(--pearly-white);
     position: fixed;
     top: 0;
     left: 0;
@@ -90,12 +104,12 @@ body {
 }
 
 .hero {
-    background-color: #f8f8f8;
+    background-color: var(--pure-white);
     overflow: hidden;
 }
 
 .heading h1 {
-    color: purple;
+    color: var(--deep-purple);
     font-size: 55px;
     text-align: center;
     margin-top: 35px;
@@ -119,7 +133,7 @@ body {
 .hero-content h2 {
     font-size: 38px;
     margin-bottom: 20px;
-    color: #333;
+    color: hsl(0, 0%, 27%);
 }
 
 .hero-content p {
@@ -127,13 +141,13 @@ body {
     line-height: 1.5;
     text-align: justify;
     margin-bottom: 40px;
-    color: #666;
+    color: var(--deep-charcoal);
 }
 
 .hero-content button {
     display: inline-block;
-    background-color: hsl(300, 100%, 25%);
-    color: #fff;
+    background-color: var(--deep-purple);
+    color: var(--pure-white);
     padding: 12px 24px;
     border-radius: 5px;
     font-size: 20px;
@@ -143,13 +157,14 @@ body {
 }
 
 .hero-content button:hover {
-    background-color: hsl(300, 100%, 14%);
+    background-color: var(--deep-purple);
     transform: scale(1.1);
 }
 
-.hero-image {
+.hero-image img{
     flex: 1;
-    width: 600px;
+    width: 100%;
+    border-radius: 20px;
     margin: auto;
     animation: fadeInRight 2s ease;
 }
@@ -228,12 +243,12 @@ body {
 
 .footer-top {
     display: flex;
-    background: hsl(200, 12%, 95%);
+    background: var(--elegant-ivory);
 }
 
 .footer-brand {
     padding-bottom: 2px;
-    border-bottom: 1px solid var(--gainsboro);
+    border-bottom: 1px solid var(--whispering-white);
 }
 
 .footer-brand .logo {
@@ -244,17 +259,19 @@ body {
     display: flex;
     background: linear-gradient(to right, #6a3093, #a044ff);
     padding-top: 23px;
+    padding: 15px;
 }
 
 .copyright {
     text-align: center;
-    color: white;
+    font-family: var(--ff-roboto);
+    color: var(--pure-white);
     font-size: 1.1rem;
 }
 
 .copyright-link {
     display: inline-block;
-    color: purple;
+    color: var(--deep-purple);
 }
 
 .container {

@@ -5,6 +5,7 @@
 \*-----------------------------------*/
 
   --midnight-noir: hsl(75, 26%, 9%);
+  --soft-ice-white: hsl(0, 0%, 92%);
   --soft-silver: hsl(0, 0%, 74%);
   --pearly-white: hsl(0, 0%, 85%);
   --deep-purple: hsl(300, 100%, 25%);
@@ -116,7 +117,7 @@ html {
 }
 
 body {
-  background: #ebebeb;
+  background: var(--soft-ice-white);
   font-size: 1.6rem;
   padding-block-start: 90px;
 }
