@@ -561,16 +561,6 @@ body {
   color: var(--deep-purple);
 }
 
-.navbar .logo {
-  background: var(--maximum-blue-green_10);
-
-  padding-block: 50px 40px;
-}
-
-.navbar .logo img {
-  margin-inline: auto;
-}
-
 .navbar-list,
 .nav-action-list {
   margin: 30px;
@@ -782,10 +772,6 @@ body {
   padding-bottom: 50px;
   border-bottom: 1px solid var(--whispering-white);
   margin-bottom: 50px;
-}
-
-.footer-brand .logo {
-  margin-bottom: 15px;
 }
 
 .social-list {
