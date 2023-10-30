@@ -262,3 +262,28 @@ ion-icon {
     justify-content: space-between;
     align-items: center;
 }
+
+
+.link-box li{
+    list-style-type: none;
+    padding: 6px 10px 0px;
+    font-size: 20px;
+}
+
+.list-contact h1{
+    font-size: 40px;
+    display: flex;
+    padding: 10px;
+
+}
+
+.social-midea{
+    display: flex;
+    margin: 10px;
+}
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0px 10px 0px;
+}
