@@ -87,24 +87,11 @@ ion-icon {
   display: block;
 }
 
-button,
-input {
+button {
   font: inherit;
   background: none;
   border: none;
-}
-
-input {
-  width: 100%;
-}
-
-button {
   cursor: pointer;
-}
-
-address {
-  font-style: normal;
-  line-height: 1.8;
 }
 
 html {
@@ -1172,3 +1159,4 @@ a.footer-link:is(:hover, :focus) {
   .product-list {
     grid-template-columns: repeat(5, 1fr);
   }
+}
