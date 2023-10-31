@@ -1,0 +1,285 @@
+* { 
+
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#roletaProdutos {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.flex {
+
+    display: flex;
+
+}
+
+.hide {
+
+    display: none;
+
+}
+
+body {
+
+    height: 100vh;
+
+    background: linear-gradient(142deg, rgba(2,0,36,1) 0%, rgba(9,102,121,1) 40%, rgba(0,212,255,1) 100%)no-repeat;
+    background-size: cover;
+}
+
+header {
+    
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    color: rgb(255, 255, 255);
+    background-color: rgb(10, 3, 116);
+
+    height: 80px;
+    
+}
+
+header > input {
+
+    width: 50vw;
+    height: 4vh;
+    
+    padding-left: 5px;
+   
+    border-radius: 5px;
+
+}
+
+header > button {
+
+    position: absolute;
+    right: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+    background-color: rgb(188, 192, 230);
+    color: rgb(0, 0, 0);
+    border: none;
+
+}
+
+#botaoCarrinho {
+
+    color: black;
+    background-color: rgb(255, 255, 255);
+    
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+#botaoCarrinho > i {
+
+    pointer-events: none;
+
+}
+
+.produto {
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    
+    width: 278px;
+    height: 477px;
+    
+    margin: 20px 0px 20px 0px;
+
+    border-radius: 10px;
+    
+    background-color: white;
+    
+}
+
+.precoAnterior {
+
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+
+    color: grey;
+    text-decoration: line-through;
+
+}
+
+.precoAtual {
+
+    font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2em;
+    color: green;
+
+}
+
+.botaoCard {
+
+    margin: auto;
+    padding: 10px;
+
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+.botaoCard:hover {
+    
+    transition: 0.5s;
+    background-color: rgb(1, 85, 1);
+
+}
+
+/* Elementos de "cart.html" */
+
+#paginaCarrinho {
+
+    height: 100vh;
+
+}
+
+#telaCarrinho {
+
+    width: 800px;
+    max-height: 450px;
+    margin: 20px auto 0 auto;
+
+}
+
+#tituloCarrinho {
+
+    padding: 10px;
+
+    font-size: 2em;
+    
+    color: white;
+
+    background-color: lightskyblue;
+
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.486);
+
+}
+
+#corpoCarrinho {
+
+    max-height: inherit;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    overflow: auto;
+    
+}
+
+.produtoCarrinho {
+
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    
+    padding: 10px;
+
+    border-bottom: 1px solid black;
+
+}
+
+.produtoCarrinho > span {
+
+    margin-right: auto;
+
+    width: 200px;
+    height: fit-content;
+
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+
+}
+
+.produtoCarrinho > img {
+
+    display: block;
+    width: 15%;
+
+    position: relative;
+    left: 40px;
+
+}
+
+.produtoCarrinho > input {
+
+    width: 2em;
+    height: fit-content;
+    border: 1px solid black;
+    padding-left: 15px;
+
+}
+
+.removeItem {
+
+    height: fit-content;
+    white-space: nowrap;
+
+}
+
+#botoesCarrinho {
+
+    display: flex;
+
+    width: fit-content;
+
+    margin: auto;
+    padding: 5px;
+
+}
+
+#botoesCarrinho > button {
+
+    width: 100px;
+    
+    margin-right: 20px;
+    padding: 5px;
+
+    border-radius: 5px;
+
+    background-color: blueviolet;
+    color: white;
+
+    cursor: pointer;
+
+}
+
+#botoesCarrinho > button:hover {
+
+    transition: 0.5s;
+
+    background-color: rgb(111, 34, 182);
+
+}
+
+#nenhumItem {
+
+    padding-top: 30px;
+
+    text-align: center;
+
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    color: rgb(103, 103, 247);
+
+}
