@@ -30,8 +30,8 @@ const itens = [
     {
 
         id: 0,
-        img: 'imgs/smartTV.jpg',
-        nome: 'Smart TV43 UHD 4K Samsung 43AU7700',
+        img: 'img-produto/Monitor.png',
+        nome: 'monitor.png',
         precoAnterior: 'R$ 2.999,99',
         precoAtual: 'R$ 1.899,99'
 
