@@ -87,10 +87,19 @@ ion-icon {
   display: block;
 }
 
-button {
+button,
+input {
   font: inherit;
   background: none;
   border: none;
+  cursor: pointer;
+}
+
+input {
+  width: 65%;
+}
+
+button {
   cursor: pointer;
 }
 
