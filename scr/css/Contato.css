@@ -1,6 +1,6 @@
 :root {
-    
-/*-----------------------------------*\
+
+    /*-----------------------------------*\
  * #COLORS
 \*-----------------------------------*/
     --whispering-white: hsl(0, 0%, 88%);
@@ -12,7 +12,7 @@
     --soft-ice-white: hsl(0, 0%, 92%);
 
 
-/*-----------------------------------*\
+    /*-----------------------------------*\
  * #FONT FAMILLY
 \*-----------------------------------*/
 
@@ -146,7 +146,6 @@ form input {
     transition: all 0.5s;
 }
 
-
 form textarea {
     padding: 10px;
     outline: none;
@@ -174,6 +173,34 @@ form button:hover {
     border-radius: 16px;
 }
 
+.link-box li {
+    list-style-type: none;
+    padding: 6px 10px 0px;
+    font-size: 20px;
+}
+
+.list-contact h1 {
+    font-size: 40px;
+    display: flex;
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+    margin: 10px;
+}
+
+ion-icon {
+    width: 30px;
+    height: 30px;
+    padding: 0px 10px 0px;
+}
+
+/*-----------------------------------*\
+ * #OBRIGADO
+\*-----------------------------------*/
+
+
 .main {
     display: flex;
     align-items: center;
@@ -192,6 +219,19 @@ form button:hover {
 .paragrafo {
     color: var(--absolute-black);
     margin-bottom: 50px;
+}
+
+.btn {
+    padding: 15px 55px;
+    background: var(--deep-purple);
+    text-decoration: none;
+    color: var(--pure-white);
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    border-radius: 16px;
 }
 
 ion-icon {
@@ -261,29 +301,4 @@ ion-icon {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-
-.link-box li{
-    list-style-type: none;
-    padding: 6px 10px 0px;
-    font-size: 20px;
-}
-
-.list-contact h1{
-    font-size: 40px;
-    display: flex;
-    padding: 10px;
-
-}
-
-.social-media{
-    display: flex;
-    margin: 10px;
-}
-
-ion-icon {
-    width: 30px;
-    height: 30px;
-    padding: 0px 10px 0px;
 }
