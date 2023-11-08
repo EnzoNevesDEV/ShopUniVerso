@@ -382,42 +382,6 @@ body {
 
 
 /*-----------------------------------*\
- * #DEPARTAMENTOS
-\*-----------------------------------*/
-
-.departamento {
-  background: linear-gradient(to right, #6a3093, #a044ff);
-  text-align: center;
-  padding: 3px 0;
-  position: fixed;
-  width: 100%;
-}
-
-.departamento-list {
-  list-style: none;
-  padding: 0;
-}
-
-.departamento-item {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-.departamento-link {
-  text-decoration: none;
-  color: var(--pure-white);
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.departamento-link:hover {
-  background-color: var(--royal-plum);
-  color: var(--pure-white);
-}
-
-/*-----------------------------------*\
  * #SEARCH
 \*-----------------------------------*/
 
@@ -471,6 +435,42 @@ body {
   background: var(--pure-white);
 }
 
+
+/*-----------------------------------*\
+ * #DEPARTAMENTOS
+\*-----------------------------------*/
+
+.departamento {
+  background: linear-gradient(to right, #6a3093, #a044ff);
+  text-align: center;
+  padding: 3px 0;
+  position: fixed;
+  width: 100%;
+}
+
+.departamento-list {
+  list-style: none;
+  padding: 0;
+}
+
+.departamento-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.departamento-link {
+  text-decoration: none;
+  color: var(--pure-white);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.departamento-link:hover {
+  background-color: var(--royal-plum);
+  color: var(--pure-white);
+}
 
 
 /*-----------------------------------*\
