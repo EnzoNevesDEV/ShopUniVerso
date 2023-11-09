@@ -479,10 +479,12 @@ body {
 
 .product-details {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     justify-content: center;
     align-items: center;
     gap: 100px;
+    padding: 30px 150px;
 }
 
 /*-----------------------------------*\
