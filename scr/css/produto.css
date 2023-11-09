@@ -32,7 +32,6 @@
     --fs-4: 2rem;
     --fs-5: 1.8rem;
     --fs-6: 1.6rem;
-    --fs-7: 1.4rem;
     --fs-8: 1.2rem;
 
     --fw-300: 300;
@@ -45,7 +44,6 @@
 \*-----------------------------------*/
 
     --transition-1: 0.25s ease;
-    --transition-2: 0.5s ease;
     --cubic-out: cubic-bezier(0.51, 0.03, 0.64, 0.28);
     --cubic-in: cubic-bezier(0.33, 0.85, 0.56, 1.02);
 
@@ -548,6 +546,7 @@ body {
 .right-side p {
     color: var(--soft-silver);
     font-size: 13px;
+    text-align: justify;
 }
 
 .prices {
