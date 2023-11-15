@@ -1,4 +1,5 @@
 <?php
+  ob_start();
   session_start();
 ?>
 <!DOCTYPE html>
@@ -51,82 +52,155 @@
     <?php
     //ARRAY MULTIDIMENCIONAL
     $itens = array([
-      'image' => '/scr/img-hardware/memoriaXpg.png',
+      'image' => 'img-hardware/memoriaXpg.png',
       'nome' => 'Memória DDR4 XPG Spectrix D50, 16GB (2x8GB), 3600Mhz, 3200Mhz, RGB, Gray-ST50',
       'preco' => 419.99,
       'desconto' => null,
       'badge' => null,
-  ],
-  [
-      'image' => '/scr/img-hardware/PlacaMãeAorus.png',
+      ],
+      [
+      'image' => 'img-hardware/PlacaMãeAorus.png',
       'nome' => 'Placa Mãe Gigabyte B660 Aorus Elite, Intel, ATX, DDR4 - B660 AORUS ELITE DDR4',
       'preco' => 1299.99,
       'desconto' => 1764.69,
       'badge' => '-27%',
-  ],
-  [
-      'image' => '/scr/img-hardware/fonteSuperFlower.png',
+      ],
+      [
+      'image' => 'img-hardware/fonteSuperFlower.png',
       'nome' => 'Fonte Super Flower LEADEX III 750W, 80 Plus Gold, PFC Ativo, Full Modular',
       'preco' => 599.99,
       'desconto' => null,
       'badge' => 'Novo',
-  ],
-  [
-      'image' => '/scr/img-hardware/ssdSataWD.png',
+      ],
+      [
+      'image' => 'img-hardware/ssdSataWD.png',
       'nome' => 'SSD 240 GB WD Green, SATA, Leitura: 545MB/s e Gravação: 465MB/s',
       'preco' => 129.75,
       'desconto' => null,
       'badge' => null,
-  ],
-  [
-      'image' => '/scr/img-hardware/pcGamer.png',
+      ],
+      [
+      'image' => 'img-hardware/pcGamer.png',
       'nome' => 'PC Gamer Enifler Completo, Intel Core I7, 16GB, GTX 1050TI 4GB, SSD 480GB, Windows 10 + Monitor 21.5 + Kit Gamer Teclado, Mouse E Headset, Hayom',
       'preco' => 4095.75,
       'desconto' => 4710.11,
       'badge' => '-15%',
-  ],
-  [
-      'image' => '/scr/img-hardware/Threadripper.png',
+      ],
+      [
+      'image' => 'img-hardware/Threadripper.png',
       'nome' => 'Processador AMD Ryzen Threadripper 3970X 3.7GHz (4.5GHz Max Turbo) 32-Core 64-Thread, 144MB sTRX4',
       'preco' => 11234.65,
       'desconto' => null,
       'badge' => '-33%',
-  ],
-  [
-      'image' => '/scr/img-hardware/WaterForce.png',
+      ],
+      [
+      'image' => 'img-hardware/WaterForce.png',
       'nome' => 'Water Cooler Gigabyte Aorus WATERFORCE X 360 AIO, ARGB, 360mm',
       'preco' => 1499.90,
       'desconto' => null,
       'badge' => null,
-  ],
+       ],
     );
     
     foreach ($itens as $key => $value) {
       ?>
-      <div class="produto">
+      <!-- <div class="produto">
           <img src="<?php echo $value['image'] ?>" />
           <a href="?adicionar=<?php echo $key ?>">Add ao carrinho</a>
           <p><?php echo $value['nome'] ?></p>
           <p2>R$ <?php echo $value['preco'] ?></p2>
-      </div>
+      </div> -->
+
+      <section class="section product">
+        <div class="container">
+          <li class="product-item">
+              <div class="product-card" tabindex="0">
+
+                <figure class="card-banner">
+                  <img src="<?php echo $value['image'] ?>" width="312" height="350" loading="lazy"
+                    alt="Placa Mãe B660 Aorus atx DDR4" class="image-contain">
+
+                    <div class="card-badge">-27%</div>
+
+                  <ul class="card-action-list">
+
+                  <li class="card-action-item">
+                                    <form method="post" action="?adicionar=<?php echo $key ?>">
+                                        <button type="submit" class="card-action-btn" aria-labelledby="card-label-<?php echo $key ?>">
+                                            <ion-icon name="cart-outline"></ion-icon>
+                                        </button>
+                                    </form>
+                                    <div class="card-action-tooltip" id="card-label-<?php echo $key ?>">Adicionar ao Carrinho</div>
+                                </li>
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-2">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-2">Adicionar aos Favoritos</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-3">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-3">Pré-Visualização</div>
+                    </li>
+
+                    <li class="card-action-item">
+                      <button class="card-action-btn" aria-labelledby="card-label-4">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <div class="card-action-tooltip" id="card-label-4">Comparar</div>
+                    </li>
+
+                  </ul>
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3 card-title">
+                  <!-- <p><?php echo $value['nome'] ?></p> -->
+                    <a> <?php echo $value['nome'] ?></a>
+                  </h3>
+
+                  <p2>R$ <?php echo $value['preco'] ?></p2>
+
+                </div>
+
+              </div>
+            </li>
+        </div>
+    </section>
+
+   <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <?php
   }
   ?>
   
   <?php
-  // ADD CARRINHO
-  if (isset($_GET['adicionar'])) {
-      $idProduto = (int)$_GET['adicionar'];
-      if (isset($itens[$idProduto])) {
-          if (isset($_SESSION['carrinho'][$idProduto])) {
-              $_SESSION['carrinho'][$idProduto]['quantidade']++;
-          } else {
-              $_SESSION['carrinho'][$idProduto] = array('quantidade' => 1, 'nome' => $itens[$idProduto]['nome'], 'preco' => $itens[$idProduto]['preco']);
-          }
-          echo '<script>alert("o item foi adicionado ao carrinho.");</script>';
-      }
-  }
-  ?>
+    // Adicionar ao carrinho
+    if (isset($_GET['adicionar'])) {
+        $idProduto = (int)$_GET['adicionar'];
+        if (isset($itens[$idProduto])) {
+            if (isset($_SESSION['carrinho'][$idProduto])) {
+                $_SESSION['carrinho'][$idProduto]['quantidade']++;
+            } else {
+                $_SESSION['carrinho'][$idProduto] = array('quantidade' => 1, 'nome' => $itens[$idProduto]['nome'], 'preco' => $itens[$idProduto]['preco']);
+            }
+            echo '<script>alert("O item foi adicionado ao carrinho.");</script>';
+            header("Location: carrinho.php");
+            exit();
+        }
+    }
+    ?>
     
   <div class="carrinho">  
     <div class="ti-carrinho">
@@ -148,7 +222,7 @@
           foreach ($_SESSION['carrinho'] as $key => $value) {
         ?> 
           <div class="itens">
-            <a href="?remover=<?php echo $key ?>"><img src="imgs/lixo.png"/></a>
+            <a href="?remover=<?php echo $key ?>"><img src="img-carrinho/lixo.png"/></a>
                 <div class="nome_preco">
                   <h2><?php echo $value['nome']?></h2>
 
@@ -170,6 +244,9 @@ if (isset($_GET['remover'])) {
     if (isset($_SESSION['carrinho'][$idProduto])) {
         unset($_SESSION['carrinho'][$idProduto]);
     }
+
+    header("Location: carrinho.php");
+    exit();
 }
 
 // ESVAZIAR CARRINHO
@@ -204,7 +281,7 @@ if (isset($_GET['finalizar'])) {
             echo number_format($total, 2, ',', '.');
             ?></p1></h2>
 
-    <a href="?finalizar"><button>Finalizar</button></a>
+    <a href="?finalizar"><button class="Finalizar">Finalizar</button></a>
 </div>
    <!-- 
         - #FOOTER
