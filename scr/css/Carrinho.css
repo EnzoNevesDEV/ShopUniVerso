@@ -606,6 +606,48 @@ body {
  * #PRODUCTS
 \*-----------------------------------*/
 
+.section.product {
+  display: inline-block;
+  width: 15%; /* Ajuste conforme necessário para a largura desejada */
+  margin: 10px;
+  box-sizing: border-box; /* Garante que a largura inclua padding e borda */
+}
+
+.container {
+  max-width: 1200px; /* Define a largura máxima do container */
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product-item {
+  list-style: none;
+}
+
+
+.product-item {
+  list-style: none; /* Remove marcadores de lista */
+}
+
+.product-card {
+  transition: transform 0.3s;
+  overflow: hidden; /* Evita que a sombra se expanda */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
 .product .section-title {
   text-align: center;
   margin-bottom: 25px;
@@ -640,6 +682,7 @@ body {
   display: grid;
   gap: 50px 25px;
 }
+
 
 
 /*-----------------------------------*\

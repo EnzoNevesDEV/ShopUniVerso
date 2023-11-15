@@ -66,6 +66,34 @@
       'badge' => '-27%',
       ],
       [
+        'image' => 'img-hardware/PlacaMãeAorus.png',
+        'nome' => 'Placa Mãe Gigabyte B660 Aorus Elite, Intel, ATX, DDR4 - B660 AORUS ELITE DDR4',
+        'preco' => 1299.99,
+        'desconto' => 1764.69,
+        'badge' => '-27%',
+        ],
+        [
+      'image' => 'img-hardware/PlacaMãeAorus.png',
+      'nome' => 'Placa Mãe Gigabyte B660 Aorus Elite, Intel, ATX, DDR4 - B660 AORUS ELITE DDR4',
+      'preco' => 1299.99,
+      'desconto' => 1764.69,
+      'badge' => '-27%',
+      ],
+      [
+        'image' => 'img-hardware/PlacaMãeAorus.png',
+        'nome' => 'Placa Mãe Gigabyte B660 Aorus Elite, Intel, ATX, DDR4 - B660 AORUS ELITE DDR4',
+        'preco' => 1299.99,
+        'desconto' => 1764.69,
+        'badge' => '-27%',
+        ],
+        [
+            'image' => 'img-hardware/PlacaMãeAorus.png',
+            'nome' => 'Placa Mãe Gigabyte B660 Aorus Elite, Intel, ATX, DDR4 - B660 AORUS ELITE DDR4',
+            'preco' => 1299.99,
+            'desconto' => 1764.69,
+            'badge' => '-27%',
+            ],
+      [
       'image' => 'img-hardware/fonteSuperFlower.png',
       'nome' => 'Fonte Super Flower LEADEX III 750W, 80 Plus Gold, PFC Ativo, Full Modular',
       'preco' => 599.99,
@@ -173,6 +201,7 @@
               </div>
             </li>
         </div>
+    </div>
     </section>
 
    <!-- 
