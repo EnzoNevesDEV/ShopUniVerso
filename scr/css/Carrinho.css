@@ -608,14 +608,14 @@ body {
 
 .section.product {
   display: inline-block;
-  width: 15%; /* Ajuste conforme necessário para a largura desejada */
+  width: 15%;
   margin: 10px;
-  box-sizing: border-box; /* Garante que a largura inclua padding e borda */
+  box-sizing: border-box; 
 }
 
 .container {
-  max-width: 1200px; /* Define a largura máxima do container */
-  margin: 0 auto; /* Centraliza o container */
+  max-width: 1200px; 
+  margin: 0 auto; 
 }
 
 .product-list {
@@ -630,12 +630,12 @@ body {
 
 
 .product-item {
-  list-style: none; /* Remove marcadores de lista */
+  list-style: none; 
 }
 
 .product-card {
   transition: transform 0.3s;
-  overflow: hidden; /* Evita que a sombra se expanda */
+  overflow: hidden; 
 }
 
 .product-card:hover {
